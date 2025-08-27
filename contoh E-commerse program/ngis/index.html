@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ar Swing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image2/logo.png">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            <ul class="navigation">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Price</a></li>
+                <li><a href="#Gallary">Service</a></li>
+                <li><a href="#Review">Newest</a></li>
+                <li><a href="#Loc">Loc</a></li>
+                <li><button class="btn btnLogin-popup" onclick="window.location.href='Pesan/pesan.html'">PESAN</button></li>
+            </ul>
+        </nav>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="/ngis/image2/suits.jpg" alt="suits.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/ngis/image2/Jersey.jpg" alt="towel.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/ngis/image2/weddress.jpg" alt="logo.png">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="arrow prev" onclick="prevSlide()">&#10094;</button>
+            <button class="arrow next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div class="main">
+            <div class="men_text">
+                <h1>Fresh Laundry<span>Handled</span><br>With Cares</h1>
+            </div>
+            <div class="main_image">
+                <img src="image/31.png">
+            </div>
+        </div>
+        <p>
+            Every garment we handle receives meticulous attention and care. We utilize premium detergents and techniques to guarantee impeccable cleanliness and fabric care. From delicate fabrics to everyday wear, Clean & Fresh Laundry ensures a perfect clean every time."
+        </p>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+            <div class="image">
+                <img src="image/about.png">
+            </div>
+            <div class="about_text">
+                <h1><span>About</span>Us</h1>
+                <h3>Why Choose us?</h3>
+                <p>
+                    We welcome you to choose Clean & Fresh Laundry for all your laundry needs, where excellence is our constant pursuit in every facet of our service. From impeccable cleanliness to personalized customer care, we ensure that every interaction with Clean & Fresh Laundry not only meets but exceeds your expectations, leaving you with a sense of satisfaction and confidence. Thank you for choosing us, and we are dedicated to consistently surpassing your laundry expectations.
+                </p>
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Our<span>Services</span></h1>
+        <div class="menu_box">
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/blouses.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Blouse</h2>
+                    <p>
+                        Pelihara Kualitas Blouse Anda
+                    </p>
+                    <h3>RP 10.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/clothes.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Clothes</h2>
+                    <p>
+                        Baju Bersih, Penampilan Terjaga
+                    </p>
+                    <h3>RP 15.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image"> 
+                    <img src="image2/dress.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Dress</h2>
+                    <p>
+                        Jaga Dress Tetap Rapi dan Tahan Lama
+                    </p>
+                    <h3>Rp 15.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/socks.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Socks</h2>
+                    <p>
+                        Kaos Kaki Bersih, Kenyamanan Terjamin
+                    </p>
+                    <h3>Rp 12.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>         
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/underwear.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Underwear</h2>
+                    <p>
+                       Celana Dalam berish, Hidup Menjadi Tenang
+                    </p>
+                    <h3>Rp 8.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/jacket.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Coats</h2>
+                    <p>
+                        Jaket Bersih, Penampilan Terjaga
+                    </p>
+                    <h3>Rp 15.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>             
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/baby.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Baby Clothes</h2>
+                    <p>
+                      Baju Bersih, Membuat Bayi Lebih Nyaman
+                    </p>
+                    <h3>Rp 15.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>      
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/jeans.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Jeans</h2>
+                    <p>
+                        Kebersihan Celana, Kesan Yang Tak Terlupakan
+                    </p>
+                    <h3>Rp 17.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>     
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/pants.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Pants</h2>
+                    <p>
+                       Pentingnya Menjaga Celana Anda Tetap Bersih
+                    </p>
+                    <h3>Rp 12.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div> 
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/clothes.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Clothes</h2>
+                    <p>
+                        Roti Lembut dengan potongan dan selai buah blueberry
+                    </p>
+                    <h3>Rp 14.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>      
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/jacket.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Jacket</h2>
+                    <p>
+                        Jaket Wangi, Penampilan Semakin Ngen
+                    </p>
+                    <h3>Rp 13.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>    
+                </div>
+            </div> 
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image2/baby.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Baby Clothes</h2>
+                    <p>
+                        Jos
+                    </p>
+                    <h3>Rp 12.000/kg</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>  
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+        <h1>Our Premium<span>Services</span></h1>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                <img src="image2/suits.jpg">
+
+                <h3>Jas</h3>
+                <p>
+                     Jas Rapih dan Bersih Menambah Kepercayaan Diri
+                </p>
+                <a href="/Pesan/pesan.html" class="gallary_btn">Rp 125.000</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image2/blanket.jpg">
+
+                <h3>Selimut</h3>
+                <p>
+                    Selimut Bersih dan Wangi Menambah Kenyamanan Ngen
+                </p>
+                <a href="/Pesan/pesan.html" class="gallary_btn">Rp 30.000</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image2/pillow.jpg">
+
+                <h3>Bantal</h3>
+                <p>
+                   Bantal Wangi Tidur Nyenyak
+                </p>
+                <a href="/Pesan/pesan.html" class="gallary_btn">Rp 25,000</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image2/carpet.jpg">
+
+                <h3>Karpet</h3>
+                <p>
+                    Karpet Bersih Menjaga Penampilan Rumah
+                </p>
+                <a href="/Pesan/pesan.html" class="gallary_btn">Rp 125,000</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image2/weddress.jpg">
+
+                <h3>Dress</h3>
+                <p>
+                    Dress Bersih Menambah Kepercayaan Diri
+                </p>
+                <a href="/Pesan/pesan.html" class="gallary_btn">Rp 150,000</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image2/towel.jpg">
+
+                <h3>Handuk</h3>
+                <p>
+                    Handuk Bersih Menjaga Penyakit
+                </p>
+                <a href="/Pesan/pesan.html" class="gallary_btn">Rp 25,000</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Our<span>Newest Service</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image2/cucikering.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Paket 1</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+					
+					<div class="review_social">
+                        <i class="name">Only 8.000</i>                    
+                    </div>
+
+                    <p>
+                        Paket Cuci Kering
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image2/setrika.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Paket 2</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+					<div class="review_social">
+                        <i class="name">Only 8.000</i>                    
+                    </div>
+					
+                    <p>
+                        Paket Setrika
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image2/panta.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Paket 3</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="name">Only 8.000</i>
+                     
+                    </div>
+
+                    <p>
+                        Paket Cuci Basah
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image2/komplit.jpg">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Paket 4</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="name">Only Rp 8.000</i>
+                    </div>
+
+                    <p>
+                        Paket Komplit
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="Jadwal">
+        <h1><span>Jadwal</span> Buka</h1>
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Waktu Buka</th>
+                <th>Waktu Tutup</th>
+            </tr>
+            <tr>
+                <td>Senin</td>
+                <td>08:00</td>
+                <td>17:00</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>08:00</td>
+                <td>17:00</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>08:00</td>
+                <td>17:00</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>08:00</td>
+                <td>17:00</td>
+            </tr>
+            <tr>
+                <td>Jumat</td>
+                <td>08:00</td>
+                <td>17:00</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--lokasi-->
+    <div class="container" id="Loc">
+        <h1>Where You Can <span>Find Us!</span></h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.389269850524!2d124.97367463092593!3d1.4175242283911365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32870a95df6309dd%3A0x21d86e4847556add!2sUniversitas%20Klabat!5e0!3m2!1sen!2sid!4v1711332989896!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+
+    <!--Team-->
+
+    <div class="team">
+        <h1>Our<span>Team</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src="image2/lumantow.jpg">
+
+                <div class="info">
+                    <h2 class="name">Swingly</h2>
+                    <p class="bio">Fakultas Ekonomi & Bisnis</p>
+
+                    <div class="team_icon">
+					<a href="https://www.instagram.com/sswingly12/" target="_blank">
+						 <i class="fa-brands fa-instagram"></i>
+		 			</a>
+                        
+				
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image2/arlan.jpg">
+
+                <div class="info">
+                    <h2 class="name">Arlan</h2>
+                    <p class="bio">Fakultas Informatika</p>
+
+                    <div class="team_icon">
+					<a href="https://www.pornhub.com/" target="_blank">
+						 <i class="fa-brands fa-instagram"></i>
+		 			</a>
+                        
+				
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Manado</p>
+                <p>Tomohon</p>
+                <p>Airmadidi</p>
+                <p>Bitung</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Services</p>
+                <p>Price</p>
+                <p>Laundry</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>0821-8853-1057 (Swengly)</p>
+                <p>0899-666-29 (Arlan)</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>12 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Order Here</h2>
+				
+				<a href="https://wa.me/682188531057" target="_blank">
+					<i class="fa-brands fa-whatsapp" style="color: #000000;"></i>
+				</a>
+				
+        			
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i>Swingly Motoling</span></p>
+
+    </footer>
+    <script>
+        // JavaScript functions for slider control
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else if (index >= slides.length) {
+                currentIndex = 0;
+            } else {
+                currentIndex = index;
+            }
+
+            const translateValue = -currentIndex * 100 + '%';
+            document.querySelector('.slider').style.transform = 'translateX(' + translateValue + ')';
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        // Autoplay (optional)
+        setInterval(() => {
+            nextSlide();
+        }, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>

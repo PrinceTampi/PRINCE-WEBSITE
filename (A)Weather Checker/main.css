@@ -1,0 +1,147 @@
+/* header utama */
+header {
+    background-color: gray;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+.font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+#greeting {
+    font-size: 2em;
+}
+
+/* body utama */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    background: linear-gradient(to bottom, #d5e9fa 50%, #2e7bbb);
+    box-sizing: border-box;
+}
+
+/* kontainer utama untuk mengatur .container */
+.main-layout {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* kalender */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.content {
+    opacity: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container dan layout */
+.container, .container-2, .container-3 {
+    flex: 1;
+    padding: 10px;
+    background: #2e7bbb;
+    opacity: 0.8;
+    margin: 2px;
+    border-radius: 10px;
+    min-width: 0; 
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+/* layout untuk container-2 dan container-3 */
+.right-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px; /* Memberi jarak dari main-container */
+    box-sizing: border-box;
+}
+
+/* Styling untuk container-2 */
+.container-2 {
+    display: flex;
+    flex-direction: row; /* Atur item-item saling bersebelahan secara horizontal */
+    padding: 10px;
+    background: #2e7bbb;
+    opacity: 0.8;
+    margin: 2px;
+    border-radius: 10px;
+    min-width: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container-2 > .content {
+    flex: 1; /* Agar konten mengambil ruang yang sama */
+    margin-right: 20px; /* Jarak antar item, opsional */
+    margin-left: 30px;
+}
+
+/* Menghapus margin kanan pada item terakhir */
+.container-2 > .content:last-child {
+    margin-right: 0;
+}
+
+/* Styling untuk weather container */
+#weather-container {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#weather-description, #weather-temperature {
+    font-size: 1.2em;
+}
+
+#quote-box {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* footer */
+footer {
+    background-color: gray;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}

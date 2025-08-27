@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        /* CSS from PriceStyle.css */
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(/img/31.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(10px);
+        }
+
+        /* New header code */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.3rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: transparent(10%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(50px);
+            z-index: -1;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+            transition: .5s;
+        }
+
+        header:hover::after {
+            left: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: black;
+            user-select: none;
+            animation: fadeUp 2s ease;
+        }
+
+        .icons {
+            position: absolute;
+            right: 5%;
+            font-size: 2.8rem;
+            color: #000;
+            cursor: pointer;
+            display: none;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.15em;
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 2.5rem;
+            font-weight: bold;
+        }
+
+        .navigation a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 3px;
+            background: black;
+            border-radius: 5px;
+            transform: scaleX(0);
+            transition: transform .3s;
+        }
+
+        .navigation a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .navigation .btnLogin-popup {
+            width: 130px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid black;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: black;
+            font-weight: 500;
+            margin-left: 40px;
+            transition: .5s;
+        }
+
+        .navigation .btnLogin-popup:hover {
+            background: #fff;
+            color: #162938;
+        }
+
+        .ham-container {
+            display: none;
+        }
+
+        .main-content {
+            margin-top: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 120px);
+        }
+
+        /* Additional CSS for Form */
+        .container {
+            max-width: 800px; /* Changed max-width to make it smaller */
+            margin: 0 auto 50px; /* Updated margin-top to create space from header */
+            padding: 20px;
+            margin-top: 120px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .form-group {
+            width: calc(50% - 10px); /* Melebar dengan lebar yang sama */
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 30px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            width: calc(100% - 20px); /* Lebar button mengikuti form-control */
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">ArSwing</h2>
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navigation">
+            <button class="btn btnLogin-popup" onclick="window.location.href='/motoling.html'">Kembali</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-group">
+            <label for="fullName">FULL NAME:</label>
+            <input type="text" id="fullName" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="cardName">NAME ON CARD:</label>
+            <input type="text" id="cardName" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="billingAddress">ADDRESS:</label>
+            <input type="text" id="billingAddress" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="cardNumber">CREDIT CARD NUMBER:</label>
+            <input type="text" id="cardNumber" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="city">CITY:</label>
+            <input type="text" id="city" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="state">STATE:</label>
+            <input type="text" id="state" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="zipCode">ZIP CODE:</label>
+            <input type="text" id="zipCode" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="expYear">EXP. YEAR:</label>
+            <select id="expYear" class="form-control" required>
+                <option value="">Select Year</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+    </div>
+</body>
+</html>

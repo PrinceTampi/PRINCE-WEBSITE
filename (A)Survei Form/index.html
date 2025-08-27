@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey-Form</h1>
+        <p id="description">we love to hear your feedback!</p>
+    </header>
+    
+    <form id="survey-form">
+        
+        <div class="form-group">
+            <label id="name-label" for="name">name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name:" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email:" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">phone number:</label>
+            <input type="number" name="number" id="number" minlength="8" placeholder="Enter your phone number:" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dropdown"> Which option are best for you?</la bel>
+            <select name="role" id="dropdown">
+                <option value="">(Select one of this)</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="worker">Worker</option>
+                <option value="manager">Manager</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Would you like to recommend to us?</label>
+            <label><input type="radio" name="recommend" value="definitely" required>Definitely</label>
+            <label><input type="radio" name="recommend" value="maybe">Maybe</label>
+            <label><input type="radio" name="recommend" value="no">No</label>
+        </div>
+
+        <div class="form-group">
+            <label>What would you like to learn more?</label>
+            <label><input type="checkbox" name="learn" value="front-end">Front-End</label>
+            <label><input type="checkbox" name="learn" value="back-end">Back-End</label>
+            <label><input type="checkbox" name="learn" value="fullstack">Fullstack</label>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Additional comment:</label>
+            <textarea name="comment" id="comments" placeholder="Any request for us?"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" name="submit" id="submit">Submit Your Answer</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+header, #tribute-info {
+    text-align: center;
+    background-color: rgb(221, 211, 211);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+footer {
+    text-align: center;
+}
